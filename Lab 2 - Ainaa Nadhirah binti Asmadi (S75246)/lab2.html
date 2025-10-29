@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .ainaa{
+            border: 1px outset rgb(0,0,0);
+            background-color: rgb(218, 168, 187);   
+            text-align: left;
+            padding-left:40px;
+            border-style: dotted;
+            border-radius: ;  
+                                                                                             o
+        }
+    </style>
+    <head>
+        <title>Personal Profile Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <!--Header Section-->
+        <header>
+            <h1>My Personal Profile Page</h1>
+        </header>
+
+        <!--Navigation Menu-->
+        <nav>
+            <a href="#profile">Profile</a> | <a href="#form">Form</a> | <a href="#footer">Footer</a> 
+        </nav>
+
+        <!--Profile Section-->
+        <section id="profile">
+            <article> 
+                <h2>My Profile information</h2>
+                <img src="ainaa.jpg" alt="ainaa" width="150"><br><br>
+
+                <!--Table to display personal details-->
+                <table border="2">
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>Ainaa Nadhirah binti Asmadi</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>21 Years Old</td>
+                    </tr>
+                    <tr>
+                        <td>Occupation</td>
+                        <td>Student</td>
+                    </tr>
+                </table>
+            </article>
+        </section><br>
+
+        <!--Form Section-->
+        <div class="ainaa">
+        <section id="form">
+            <article>
+                <h2>User Information Form</h2>
+
+                <!--Form that collects user input-->
+                <form>
+
+                    <!--Text input for name-->
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <!--Text input fot email-->
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <!--Radio buttons for gender-->
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
+
+                    <!--Checkbox for hobbies-->
+                    <label>Favourite Hobbies:</label><br>
+                    <input type="checkbox" id="reading" name="hobby" value="Reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="listening music" name="hobby" value="Listening Music">
+                    <label for="listening music">Listening Music</label>
+                    <input type="checkbox" id="playing with cat" name="hobby" value="Playing With Cat">
+                    <label for="playing with cat">Playing With Cat</label><br><br>
+
+                    <!--Submit button-->
+                    <input type="submit" value="submit">
+                </form>
+            </article>
+        </section><br>
+    </div>
+
+        <!--Footer Section-->
+        <footer id="footer">
+            <p><i>Copyright &copy;2025 Ainaa Nadhirah</i></p>
+        </footer>
+
+    </body>
+</html>
