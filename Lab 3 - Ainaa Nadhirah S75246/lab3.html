@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form with Inline Calculator</title>
+</head>
+<body>
+
+    <!-- 2. Define the Structure:-->
+    <!-- 3. Header Section -->
+    <div style="background-color: lightblue;">
+        <h1 style="color: black;">Contact Us</h1>
+        <span style="color: black;">Your feedback matters!</span><br><br>
+    </div>
+
+    <!-- 4. Content Section -->
+    <div style="background-color: Moccasin ;">
+        <form>
+            <!-- Email input -->
+            <label style="color: black;">Email:</label>
+            <input type="email" name="useremail"><br><br>
+            
+            <!-- Date input -->
+            <label style="color: black;">Date to contact:</label>
+            <input type="date" name="contactdate"><br><br>
+            
+            <!-- Range input -->
+            <label style="color: black;">Satisfaction level:</label>
+            <input type="range" name="satisfaction" min="0" max="10"><br><br>
+            
+            <!-- Submit button -->
+            <button type="submit" style="color: black; background-color: orange;">Submit</button>
+        </form>
+        
+        <!-- Inline Calculator -->
+        <div style="background-color: plum; padding: 6px;">
+            <label style="color: black;">Number 1:</label>
+            <input type="number" id="num1" oninput="calculateSum()">
+            <label style="color: black;">Number 2:</label>
+            <input type="number" id="num2" oninput="calculateSum()">
+            <br>
+            <label style="color: black;">Sum:</label>
+            <output id="sum" style="color: black;"></output>
+        </div>
+    </div>
+
+    <!-- 5. Footer Section -->
+    <div style="background-color: grey;">
+        <p style="color: black;">Contact us at calculator123@gmail.com</p>
+        <p style="color: black;">Copyright &copy; 2025 Our Website</p>
+    </div>
+
+    <script>
+      function calculateSum() {
+        var num1 = parseFloat(document.getElementById('num1').value) || 0;
+        var num2 = parseFloat(document.getElementById('num2').value) || 0;
+        document.getElementById('sum').value = num1 + num2;
+      }
+    </script>
+</body>
+</html>
+
